@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Quasimoda;
+  src: url("../fonts/Quasimoda/QuasimodaLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Quasimoda;
+  src: url("../fonts/Quasimoda/QuasimodaRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Quasimoda;
+  src: url("../fonts/Quasimoda/QuasimodaItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Quasimoda;
+  src: url("../fonts/Quasimoda/QuasimodaBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+// @font-face {
+//   font-family: Quasimoda;
+//   src: url("../fonts/Quasimoda/QuasimodaBlack.woff2") format("woff2");
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: Rion;
+  src: url("../fonts/Rion/Rion.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Rion;
+  src: url("../fonts/Rion/RionBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+// body#frontend:not(.home) {
+//   padding-top: 4.9rem;
+// }
+
+#logo {
+  background-image: url(../images/Logo_Black_256.png);
+  background-size: contain;
+  width: 180px;
+  height: 55px;
+}
+
+.bg-dark #logo {
+  background-image: url(../images/Logo_White_256.png);
+}
+
+body#frontend {
+  padding-top: 4.9rem;
+}
+
+.home #main-menu {
+  transition: background-color 0.5s;
+}
+
+@include media-breakpoint-up(lg) {
+  #menu-menu a {
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: $navbar-dark-toggler-icon-bg-w;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+@include media-breakpoint-down(md) {
+  nav.navbar.fixed-top {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.texto-shadow,
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+
+.font-rion {
+  font-family: $font-family-serif;
+}
+
+.post-type-archive-faq,
+.post-type-archive-consejo {
+  .card-header {
+    // font-family: $font-family-serif;
+    padding: $card-spacer-y*2 $card-spacer-x;
+    color: $gray-700;
+  }
+}
+
+.container-header {
+  width: 100%;
+  min-height: 25vh;
+}
+
+.container-card {
+  min-height: 25vh;
+}
+
+#blueimp-gallery a {
+  color: $white !important;
+}
+
+figcaption {
+  font-size: $figure-caption-font-size !important;
+}
+
+.card_bg_title {
+  height: 66vh;
+}
+
+.header_pag_corto h1,
+.header_pag_corto h2,
+.header_pag_corto h3 {
+  font-weight: 700;
+}
+
+.header_pag_corto h1,
+.card_bg_post h1,
+.card_bg h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lugar {
+  @extend .pt-4;
+  @extend .pb-2;
+
+  border-bottom: 1px solid $gray-400;
+
+  h6 {
+    font-family: $font-family-sans-serif;
+  }
+
+  p {
+    margin-bottom: $spacer/2;
+  }
+}
+
+.lugar:last-of-type {
+  border-bottom: none;
+}
+
+address {
+  @extend .small;
+}
+
+#accordion .collapsed .fa-caret-down {
+  display: none;
+}
+
+#accordion a:not(.collapsed) .fa-caret-right {
+  display: none;
+}
