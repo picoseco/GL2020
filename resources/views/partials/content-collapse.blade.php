@@ -8,10 +8,10 @@ if ($first==false) {
 }
 $first=false;
 @endphp
-<div class="card text-center">
+<div class="card0 text-center">
 
   <div class="card-header" id="heading-{{ $post->post_name }}">
-    <a class="h4 {{ $button }}" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $post->post_name }}" aria-expanded="true" aria-controls="collapse-{{ $post->post_name }}">
+    <a class="h3 {{ $button }}" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $post->post_name }}" aria-expanded="true" aria-controls="collapse-{{ $post->post_name }}">
       {{ get_the_title() }}
     </a>
   </div>

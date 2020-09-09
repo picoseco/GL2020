@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-{!! App::card_bg_post('large','fondo-faq') !!}
+{!! App::cardbgPost('large','fondo-faq') !!}
 <div class="container">
-  <div id="accordion" class="accordion">
+  <div id="accordion" class="accordion rounded bg-light">
     @php global $first; /* $first=true; */ @endphp
     @while (have_posts()) @php the_post() @endphp
       @include('partials.content-collapse')

@@ -70,7 +70,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$primary:       $gray-800 !default;
+$primary:       $gray-900 !default;
 $secondary:     $GL_verde !default;
 $success:       $GL_verde !default;
 $info:          $GL_naranja !default;
@@ -100,6 +100,17 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              theme-color("primary") !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-decoration:                   underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
+
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
@@ -118,7 +129,7 @@ $font-size-sm:                ($font-size-base * 0.875) !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
+$font-weight-normal:          400;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          700 !default;
 
@@ -252,20 +263,20 @@ $navbar-dark-toggler-border-color:  rgba($white, 0.1) !default;
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                0.5rem !default;
 $dropdown-spacer:                   0.125rem !default;
-$dropdown-bg:                       $black !default;
-$dropdown-border-color:             rgba($black, 0.15) !default;
+// $dropdown-bg:                       $black !default;
+$dropdown-border-color:             $light;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 0.5rem 1rem rgba($black, 0.175) !default;
 
-$dropdown-link-color:               $navbar-dark-color !default;
+// $dropdown-link-color:               $navbar-dark-color !default;
 $dropdown-link-hover-color:         $navbar-dark-hover-color !default;
 $dropdown-link-hover-bg:            $black !default;
 
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $black !default;
+// $dropdown-link-active-color:        $component-active-color !default;
+$dropdown-link-active-bg:           $gray-800;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 

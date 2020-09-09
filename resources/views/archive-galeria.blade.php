@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-{!! App::card_bg_post('large','fondo-galeria') !!}
+{!! App::cardbgPost('large','fondo-galeria') !!}
 <div class="container">
   <div class="row">
     @while (have_posts()) @php the_post() @endphp

@@ -1,1 +1,1 @@
-{!! App::header_pag_corto() !!}
+{!! App::headerpagCorto() !!}

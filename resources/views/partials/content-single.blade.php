@@ -1,5 +1,5 @@
 <article @php post_class() @endphp>
-  {!! App::header_pag_corto() !!}
+  {!! App::headerpagCorto() !!}
   <div class="container">
     @php the_content() @endphp
   </div>

@@ -8,14 +8,16 @@ use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
 // laravel debug !!genial!!!
-function registerWhoops() {
+function registerWhoops()
+{
     $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
     $whoops->register();
 }
-if( WP_DEBUG ) registerWhoops();
+if (WP_DEBUG) {
+    registerWhoops();
+}
 // fin laravel //
-
 
 /**
  * Theme assets
@@ -42,7 +44,6 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
-    add_theme_support('bootstrap-gallery');
     add_theme_support('align-wide');
     // add_theme_support('soil-js-to-footer');
 

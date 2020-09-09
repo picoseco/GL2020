@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  {!! App::card_bg('large') !!}
+  {!! App::headerpagCorto('large') !!}
   <div class="container">
     @php $args = array('post_type'=>'pais','post__not_in' => array(1931,1932,1933),'orderby'=>'name','order'=>'ASC'); $the_query = new WP_Query( $args ); @endphp
     <div id="accordion" class="accordion mb-5">

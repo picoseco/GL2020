@@ -1,5 +1,7 @@
 <?php
-function my_login_logo() { ?>
+function my_login_logo()
+{
+?>
   <style type="text/css">
   #login h1 a, .login h1 a {
     background-image: url(<?php echo get_theme_file_uri(); ?>/admin/Logo_Rainbow_256.png);
@@ -11,4 +13,4 @@ function my_login_logo() { ?>
   }
   </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action('login_enqueue_scripts', 'my_login_logo');

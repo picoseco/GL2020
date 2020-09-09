@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-  {!! App::card_bg('large') !!}
+  {!! App::cardBg('large') !!}
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <h3>Mapa de salones</h3>
+        <h2>Mapa de salones</h2>
         {{-- google maps --}}
         @php
         $args = array(
@@ -201,7 +201,7 @@
         {{-- // google maps --}}
       </div>
       <div class="col-lg-6">
-        <h3>Salones por país</h3>
+        <h2>Salones por país</h2>
         <div id="accordion" class="accordion">
           @php
           $args = array('post_type'=>'pais','post__not_in' => array(650),'orderby'=>'name','order'=>'ASC'); //excluimos "su pais no está"

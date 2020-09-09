@@ -57,16 +57,16 @@
 //   padding-top: 4.9rem;
 // }
 
-#logo {
-  background-image: url(../images/Logo_Black_256.png);
-  background-size: contain;
-  width: 180px;
-  height: 55px;
-}
+// #logo {
+//   background-image: url(../images/Logo_Black_256.png);
+//   background-size: contain;
+//   width: 180px;
+//   height: 55px;
+// }
 
-.bg-dark #logo {
-  background-image: url(../images/Logo_White_256.png);
-}
+// .bg-dark #logo {
+//   background-image: url(../images/Logo_White_256.png);
+// }
 
 body#frontend {
   padding-top: 4.9rem;
@@ -114,7 +114,7 @@ body#frontend {
   .card-header {
     // font-family: $font-family-serif;
     padding: $card-spacer-y*2 $card-spacer-x;
-    color: $gray-700;
+    // color: $gray-700;
   }
 }
 
@@ -139,6 +139,17 @@ figcaption {
   height: 66vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  text-transform: uppercase;
+}
+
 .header_pag_corto h1,
 .header_pag_corto h2,
 .header_pag_corto h3 {
@@ -148,7 +159,6 @@ figcaption {
 .header_pag_corto h1,
 .card_bg_post h1,
 .card_bg h1 {
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
 }
