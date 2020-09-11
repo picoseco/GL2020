@@ -135,21 +135,6 @@ figcaption {
   font-size: $figure-caption-font-size !important;
 }
 
-.card_bg_title {
-  height: 66vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-.h1,
-.h2,
-.h3,
-.h4 {
-  text-transform: uppercase;
-}
-
 .header_pag_corto h1,
 .header_pag_corto h2,
 .header_pag_corto h3 {
@@ -159,6 +144,7 @@ h4,
 .header_pag_corto h1,
 .card_bg_post h1,
 .card_bg h1 {
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
 }
