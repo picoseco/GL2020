@@ -57,7 +57,7 @@ class App extends Controller
         }
         $poster = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), $size, false);
         if ($poster) {
-            echo '<div class="header_pag_corto align-items-center container-header d-flex mb-3 mb-md-5" style="background-image:url('.$poster[0].'); background-size:cover; background-position:center;">';
+            echo '<div class="header_pag_corto align-items-center container-header d-flex mb-4 mb-md-5" style="background-image:url('.$poster[0].'); background-size:cover; background-position:center;">';
             echo '<div class="container text-white text-shadow text-center">';
             echo '<div class="row justify-content-md-center">';
             echo '<div class="col-md-6">';

@@ -53,21 +53,6 @@
   font-display: auto;
 }
 
-// body#frontend:not(.home) {
-//   padding-top: 4.9rem;
-// }
-
-// #logo {
-//   background-image: url(../images/Logo_Black_256.png);
-//   background-size: contain;
-//   width: 180px;
-//   height: 55px;
-// }
-
-// .bg-dark #logo {
-//   background-image: url(../images/Logo_White_256.png);
-// }
-
 body#frontend {
   padding-top: 4.9rem;
 }
@@ -109,6 +94,10 @@ body#frontend {
   font-family: $font-family-serif;
 }
 
+.card_bg_title p {
+  line-height: 1;
+}
+
 .post-type-archive-faq,
 .post-type-archive-consejo {
   .card-header {
@@ -120,11 +109,11 @@ body#frontend {
 
 .container-header {
   width: 100%;
-  min-height: 25vh;
+  min-height: 33vh;
 }
 
 .container-card {
-  min-height: 25vh;
+  min-height: 33vh;
 }
 
 #blueimp-gallery a {
